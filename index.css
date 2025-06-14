@@ -17,6 +17,7 @@ h1 {
   padding: 100px;
 }
 
+/*ここから.global-nav ul li aまでメニューのcss*/
 .global-nav {
   position: fixed;
     top: 0;
@@ -27,23 +28,23 @@ h1 {
 
 .global-nav ul {
   display: flex;
-  justify-content: center;
+  justify-content: center; /* 真ん中揃え */
   list-style: none;
 }
 
 .global-nav ul li {
-  margin: 0 30px; 
+  margin: 0 30px; /* 左右の余白 */
 }
 
 .global-nav ul li a {
   display: block;
-  padding: 15px 0;                  
+  padding: 15px 0;           
   color: #01ADF9;                       
-  text-decoration: none;             
+  text-decoration: none;    /* 下線消す */      
   font-size: 18px;                   
-  font-weight: bold;               
-  letter-spacing: 0.15em;   
-  text-transform: uppercase;         
+  font-weight: bold;          /* 太字 */
+  letter-spacing: 0.15em;    /* 文字間隔 */
+  text-transform: uppercase;       /* 大文字 */   
   font-family: sans-serif;
   transition: color 0.2s;
 }
