@@ -1,22 +1,49 @@
-.content {
-  display: flex;
+div.members {
+  background-color: #DAF5FF;
+  padding: 100px;
+  
 }
 
-.main_discription {
-  width: 20%;
-  border: 3px solid #000;
+.main_description {
+  padding: 100px;
 }
 
-.menbers {
-  width: 40%;
-  border: 3px solid #000;
-}
-
-.menbers_discription {
-  color: red;
+h1 {
+  padding: 50px;
 }
 
 .images {
-  width: 40%;
-  border: 3px solid #000;
+  background-color: #01ADF9;
+  padding: 100px;
+}
+
+.global-nav {
+  position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.global-nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.global-nav ul li {
+  margin: 0 30px; 
+}
+
+.global-nav ul li a {
+  display: block;
+  padding: 15px 0;                  
+  color: #01ADF9;                       
+  text-decoration: none;             
+  font-size: 18px;                   
+  font-weight: bold;               
+  letter-spacing: 0.15em;   
+  text-transform: uppercase;         
+  font-family: sans-serif;
+  transition: color 0.2s;
 }
