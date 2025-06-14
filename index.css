@@ -1,3 +1,22 @@
-h1 {
-  color: blue;
+.content {
+  display: flex;
+}
+
+.main_discription {
+  width: 20%;
+  border: 3px solid #000;
+}
+
+.menbers {
+  width: 40%;
+  border: 3px solid #000;
+}
+
+.menbers_discription {
+  color: red;
+}
+
+.images {
+  width: 40%;
+  border: 3px solid #000;
 }
