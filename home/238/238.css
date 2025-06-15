@@ -32,3 +32,45 @@ body {
     font-family: sans-serif;
     transition: color 0.2s;
 }
+
+p {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+
+.img_text {
+    overflow: hidden;  
+}
+
+.img_left {
+    float: left;
+    width: 30%;  
+    height: auto;
+    margin-right: 15px; 
+    margin-left: 15%;
+}
+
+.img_right {
+    float: right;
+    width: 30%;
+    height: auto;
+    margin-right: 15%; 
+    margin-left: 15px;
+}
+
+.text1 {
+    font-size: 30px;
+    text-align: left;
+}
+
+#spot {
+    background-color: #DAF5FF;
+}
