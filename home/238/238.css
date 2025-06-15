@@ -1,0 +1,30 @@
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center; 
+    list-style: none;
+}
+
+.nav ul li {
+    margin: 0 30px; 
+}
+
+.nav ul li a {
+    display: block;
+    padding: 15px 0;           
+    color: #01ADF9;                       
+    text-decoration: none;
+    font-size: 18px;                   
+    font-weight: bold; 
+    letter-spacing: 0.15em; 
+    text-transform: uppercase;  
+    font-family: sans-serif;
+    transition: color 0.2s;
+}
