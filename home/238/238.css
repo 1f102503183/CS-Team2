@@ -39,7 +39,12 @@ p {
 }
 
 h2 {
+    color: #01ADF9;
     font-size: 50px;
+}
+
+.h2ac {
+    color: white;
 }
 
 h3 {
@@ -89,4 +94,8 @@ h3 {
 
 #access {
     background-color: #01ADF9;
+}
+
+.accessimg {
+    width: 90%;
 }
