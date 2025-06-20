@@ -3,6 +3,7 @@ body {
 }
 
 .nav {
+    background-color: white;
     position: fixed;
     top: 0;
     left: 0;
@@ -22,7 +23,7 @@ body {
 
 .nav ul li a {
     display: block;
-    padding: 15px 0;           
+    padding: 10px 0;           
     color: #01ADF9;                       
     text-decoration: none;
     font-size: 18px;                   
@@ -84,4 +85,8 @@ h3 {
 
 #food {
     background-color: #DAF5FF;
+}
+
+#access {
+    background-color: #01ADF9;
 }
