@@ -62,15 +62,30 @@ h3 {
     float: right;
     width: 30%;
     height: auto;
-    margin-right: 15%; 
+    margin-right: 10%; 
     margin-left: 15px;
 }
 
 .text1 {
     font-size: 30px;
     text-align: left;
+    margin-right: 10%;
+}
+
+.text2 {
+    font-size: 30px;
+    text-align: left;
+    margin-left: 10%;
+}
+
+section {
+    padding: 0;
 }
 
 #spot {
+    background-color: aliceblue;
+}
+
+#food {
     background-color: #DAF5FF;
 }
