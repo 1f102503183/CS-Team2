@@ -6,6 +6,7 @@
     <title>238</title>
     <link rel="stylesheet" type="text/css" href="238.css">
     <link rel="stylesheet" type="text/css" href="../../common.css">
+    <script src="238.js" defer></script>
 </head>
 
 <body>
@@ -16,6 +17,7 @@
             <li><a href="#about">ABOUT</a></li>
             <li><a href="#spot">SPOT</a></li>
             <li><a href="#food">FOOD</a></li>
+            <li><a href="#event">EVENT</a></li>
             <li><a href="#access">ACCESS</a></li>
         </ul>
     </nav>
@@ -88,9 +90,51 @@
         </div>
     </section>
 
+    <section class="content-section" id="event">
+        <h2 class="section-title">event</h2>
+        <nav class="season-tabs">
+            <button type="button" class="tab-button active" data-season="spring">春 🌸</button>
+            <button type="button" class="tab-button" data-season="summer">夏 🎆</button>
+            <button type="button" class="tab-button" data-season="autumn">秋 🍁</button>
+            <button type="button" class="tab-button" data-season="winter">冬 ❄️</button>            
+        </nav>
+            
+        <div class="season-content">
+            <div id="spring" class="tab-panel active" role="tabpanel" aria-labelledby="tab-spring">
+                <h4>春のイベント一覧</h4>
+                <ul>
+                    <li><a href="#"><strong>湘南江の島春まつり</strong> - 江の島弁天橋での武者行列や稚児行列が見どころ。</a> (3月中旬)</li>
+                    <li><a href="#"><strong>流鏑馬（やぶさめ）</strong> - 片瀬海岸西浜で勇壮な馬術が披露されます。</a> (4月下旬)</li>
+                </ul>
+            </div>
+            <div id="summer" class="tab-panel" role="tabpanel" aria-labelledby="tab-summer">
+                <h4>夏のイベント一覧</h4>
+                <ul>
+                    <li><a href="#"><strong>江の島天王祭</strong> - 海の安全と豊漁を祈願する伝統的なお祭り。</a> (7月中旬)</li>
+                    <li><a href="#"><strong>江の島灯籠</strong> - 島内が優しい灯籠の光でライトアップされます。</a> (8月)</li>
+                    <li><a href="#"><strong>ふじさわ江の島花火大会</strong> - 片瀬海岸から打ち上げられる大輪の花火。</a> (例年10月開催ですが、夏に開催される年も)</li>
+                </ul>
+            </div>
+            <div id="autumn" class="tab-panel" role="tabpanel" aria-labelledby="tab-autumn">
+                <h4>秋のイベント一覧</h4>
+                <ul>
+                    <li><a href="#"><strong>湘南キャンドル</strong> - 江の島サムエル・コッキング苑が数千のキャンドルで彩られます。</a> (10月中旬～11月上旬)</li>
+                    <li><a href="#"><strong>龍の口竹灯籠</strong> - 龍口寺周辺が竹灯籠で幻想的な雰囲気に。</a> (10月)</li>
+                </ul>
+            </div>
+            <div id="winter" class="tab-panel" role="tabpanel" aria-labelledby="tab-winter">
+                <h4>冬のイベント一覧</h4>
+                <ul>
+                    <li><a href="#"><strong>湘南の宝石</strong> - 島全体がイルミネーションで輝く、冬の江の島最大のイベント。</a> (11月下旬～2月下旬)</li>
+                    <li><a href="#"><strong>元旦 初日の出</strong> - 太平洋から昇る美しい初日の出を拝めます。</a> (1月1日)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
     <section id="access"><br>
         <h2 class="h2ac">access</h2>
-        <img src="238img/access.png" class="accessimg">
+        <img src="238img/access.png" class="accessimg" >
     </section>
 </body>
 </html>

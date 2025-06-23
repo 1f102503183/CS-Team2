@@ -46,6 +46,9 @@ h2 {
 .h2ac {
     color: white;
 }
+h2.section-title {
+    color: white;
+}
 
 h3 {
     font-size: 40px;
@@ -100,9 +103,99 @@ h3 {
 }
 
 .accessimg {
-    width: 90%;
+    max-width: 90vw;
+    margin: 0 auto;
 }
 
 span {
     font-weight: bold;
+}
+
+/* js*/
+.season-tabs {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* 小画面では折り返す */
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .tab-button {
+            padding: 0.75rem 1.5rem;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 700;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+        
+        .tab-button:hover {
+            background-color: #f0f8ff;
+            border-color: #007bbf;
+        }
+        
+        .tab-button.active {
+            background-color: white;
+            color: white;
+            border-color: #007bff;
+            color: #01ADF9;
+            box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+        }
+
+        .tab-panel {
+            display: none; /* 初期状態では非表示 */
+            background-color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            animation: fadeIn 0.5s ease;
+            max-width: 80vw;
+            margin: 0 auto;
+        }
+
+        .tab-panel.active {
+            display: block; /* activeクラスがついたら表示 */
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .tab-panel h4 {
+            margin-top: 0;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .tab-panel ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+        }
+        
+        .tab-panel li {
+            padding: 0.75rem 0.5rem;
+            border-bottom: 1px solid #eee;
+            font-size: 1rem;
+        }
+        
+        .tab-panel li:last-child {
+            border-bottom: none;
+        }
+/* jsここまで*/
+
+.content-section {
+    background-color: #01ADF9;
+}
+
+.content-section a {
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.season-content h4 {
+    font-size: 30px;
 }
