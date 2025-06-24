@@ -68,7 +68,7 @@ h3 {
 
 .slider-container {
     width: 80%;
-    height: 500px;
+    height: 60%;
     margin-left: 10%;
     position: relative; /* 操作ボタンを配置する基準点にする */
     overflow: hidden;   /* はみ出した画像を隠す */
