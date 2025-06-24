@@ -25,3 +25,68 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             });
         });
+
+document.addEventListener('DOMContentLoaded', function() {
+            
+            const sliderWrapper = document.querySelector('.slider-wrapper');
+            const slides = document.querySelectorAll('.slide');
+            const prevBtn = document.querySelector('.prev-btn');
+            const nextBtn = document.querySelector('.next-btn');
+            const dotsContainer = document.querySelector('.dots-container');
+
+            let currentIndex = 0;
+            const slideCount = slides.length;
+            let intervalId;
+
+            for (let i = 0; i < slideCount; i++) {
+                const dot = document.createElement('div');
+                dot.classList.add('dot');
+                dot.dataset.index = i;
+                dotsContainer.appendChild(dot);
+            }
+            const dots = document.querySelectorAll('.dot');
+
+            function goToSlide(index) {
+                sliderWrapper.style.transform = `translateX(-${index * 100}%)`;
+                dots.forEach(dot => dot.classList.remove('active'));
+                if (dots[index]) {
+                    dots[index].classList.add('active');
+                }
+                currentIndex = index;
+            }
+
+            function startAutoPlay() {
+                intervalId = setInterval(() => {
+                    let nextIndex = (currentIndex + 1) % slideCount;
+                    goToSlide(nextIndex);
+                }, 3000);
+            }
+            
+            function stopAutoPlay() {
+                clearInterval(intervalId);
+            }
+
+            nextBtn.addEventListener('click', () => {
+                const nextIndex = (currentIndex + 1) % slideCount;
+                goToSlide(nextIndex);
+            });
+
+            prevBtn.addEventListener('click', () => {
+                const prevIndex = (currentIndex - 1 + slideCount) % slideCount;
+                goToSlide(prevIndex);
+            });
+            
+            dots.forEach(dot => {
+                dot.addEventListener('click', (e) => {
+                    const index = parseInt(e.target.dataset.index);
+                    goToSlide(index);
+                });
+            });
+            
+            const sliderContainer = document.querySelector('.slider-container');
+            sliderContainer.addEventListener('mouseenter', stopAutoPlay);
+            sliderContainer.addEventListener('mouseleave', startAutoPlay);
+
+            goToSlide(0);
+            startAutoPlay();
+        });
