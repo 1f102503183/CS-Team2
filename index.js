@@ -6,12 +6,32 @@ const url_list = [
   "./home/img/homepage_image/C.jpg",
 ];
 
-if (imageSlider) {
-  imageSlider.src = url_list[0];
-}
-
 let index = 0;
 
-function changeImage(imageSlider) {
-  imageSlider.src = url_list[(index + 1) % url_list.length];
+if (imageSlider) {
+  imageSlider.src = url_list[index];
+}
+
+function changeImage(index) {
+  imageSlider.src = url_list[index % url_list.length];
+}
+
+const timeID = setInterval(() => {
+  index = index + 1;
+  console.log(index);
+  changeImage(index);
+}, 3000);
+
+const nextbutton = document.getElementById("nextbutton");
+const backbutton = document.getElementById("backbutton");
+
+if (nextbutton && backbutton) {
+  nextbutton.addEventListener("click", () => {
+    index = index + 1;
+    changeImage(index);
+  });
+  backbutton.addEventListener("click", () => {
+    index = index - 1;
+    changeImage(index);
+  });
 }
