@@ -151,6 +151,12 @@ h3 {
     margin-left: 10%;
 }
 
+map {
+    float: left;
+    margin-left: 10%;
+    gap: 2rem;
+}
+
 .img_right {
     float: right;
     width: 30%;
