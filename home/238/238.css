@@ -3,6 +3,7 @@ body {
 }
 
 .nav {
+    background-color: white;
     position: fixed;
     top: 0;
     left: 0;
@@ -22,7 +23,7 @@ body {
 
 .nav ul li a {
     display: block;
-    padding: 15px 0;           
+    padding: 10px 0;           
     color: #01ADF9;                       
     text-decoration: none;
     font-size: 18px;                   
@@ -38,16 +39,108 @@ p {
 }
 
 h2 {
+    color: #01ADF9;
     font-size: 50px;
+}
+
+.h2ac {
+    color: white;
+}
+h2.section-title {
+    color: white;
+    margin-top: 0;
+    padding-top: 2%;
 }
 
 h3 {
     font-size: 40px;
+    margin: 0;
 }
 
 
 .img_text {
+    display: flex;
     overflow: hidden;  
+    gap: 2rem;
+    margin-bottom: 5%;
+}
+
+.layout-reverse {
+    flex-direction: row-reverse;
+}
+
+.slider-container {
+    width: 80%;
+    height: 60%;
+    margin-left: 10%;
+    position: relative; /* 操作ボタンを配置する基準点にする */
+    overflow: hidden;   /* はみ出した画像を隠す */
+    border-radius: 10px; /* 角を丸くする */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* 影を付けて立体感を出す */
+}
+
+.slider-wrapper {
+    display: flex; /* 画像を横並びにする */
+    transition: transform 0.5s ease-in-out; /* スライドアニメーションを滑らかに */
+}
+
+.slide {
+    width: 100%;       /* コンテナと同じ幅にする */
+    flex-shrink: 0;    /* 画像が縮まないようにする */
+    flex-grow: 0;
+}
+
+/* 操作ボタン（◀ ▶）の共通スタイル */
+.slider-btn {
+    position: absolute; /* 親要素(.slider-container)を基準に配置 */
+    top: 50%;           /* 上下中央に配置 */
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明の黒 */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.slider-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* ホバー時に濃くする */
+}
+
+/* 前へボタン（◀）の位置 */
+.prev-btn {
+    left: 10px;
+}
+
+/* 次へボタン（▶）の位置 */
+.next-btn {
+    right: 10px;
+}
+/* インジケーター（下の点）のコンテナ */
+.dots-container {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px; /* 点と点の間の隙間 */
+}
+
+/* 各インジケーター（点）のスタイル */
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* アクティブな（現在表示中の）点のスタイル */
+.dot.active {
+    background-color: white;
 }
 
 .img_left {
@@ -55,7 +148,13 @@ h3 {
     width: 30%;  
     height: auto;
     margin-right: 15px; 
-    margin-left: 15%;
+    margin-left: 10%;
+}
+
+map {
+    float: left;
+    margin-left: 10%;
+    gap: 2rem;
 }
 
 .img_right {
@@ -69,7 +168,7 @@ h3 {
 .text1 {
     font-size: 30px;
     text-align: left;
-    margin-right: 10%;
+    margin-right: 8%;
 }
 
 .text2 {
@@ -80,8 +179,112 @@ h3 {
 
 #spot {
     background-color: aliceblue;
+    padding-bottom: 5%;
 }
 
 #food {
     background-color: #DAF5FF;
+    padding-bottom: 5%;
+}
+
+#access {
+    background-color: #01ADF9;
+}
+
+.accessimg {
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
+span {
+    font-weight: bold;
+}
+
+/* js*/
+.season-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* 小画面では折り返す */
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.tab-button {
+    padding: 0.75rem 1.5rem;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+        
+.tab-button:hover {
+    background-color: #f0f8ff;
+    border-color: #007bbf;
+}
+
+.tab-button.active {
+    background-color: white;
+    color: white;
+    border-color: #007bff;
+    color: #01ADF9;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+.tab-panel {
+    display: none; /* 初期状態では非表示 */
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    animation: fadeIn 0.5s ease;
+    max-width: 80vw;
+    margin: 0 auto;
+}
+
+.tab-panel.active {
+    display: block; /* activeクラスがついたら表示 */
+}
+        
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.tab-panel h4 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.tab-panel ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+        
+.tab-panel li {
+    padding: 0.75rem 0.5rem;
+    border-bottom: 1px solid #eee;
+    font-size: 1rem;
+}
+        
+.tab-panel li:last-child {
+    border-bottom: none;
+}
+/* jsここまで*/
+
+.content-section {
+    background-color: #01ADF9;
+}
+
+.content-section a {
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.season-content h4 {
+    font-size: 30px;
 }

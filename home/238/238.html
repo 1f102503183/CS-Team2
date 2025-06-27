@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 
 <head>
     <meta charset="utf-8">
     <title>238</title>
     <link rel="stylesheet" type="text/css" href="238.css">
     <link rel="stylesheet" type="text/css" href="../../common.css">
+    <script src="238.js" defer></script>
 </head>
 
 <body>
@@ -16,6 +17,7 @@
             <li><a href="#about">ABOUT</a></li>
             <li><a href="#spot">SPOT</a></li>
             <li><a href="#food">FOOD</a></li>
+            <li><a href="#event">EVENT</a></li>
             <li><a href="#access">ACCESS</a></li>
         </ul>
     </nav>
@@ -24,74 +26,124 @@
     </section>
 
     <section id="about">
-        <div class="content">
+        <div class="content"><br>
             <h2>about</h2>
             <p>所在地：神奈川県藤沢市片瀬地区</p>
             <p>神奈川県藤沢市に位置する陸繋島である。</p>
         </div>
     </section>
 
-    <section id="spot">
+    <section id="spot"><br>
         <h2>spot</h2>
-        <h3>岩屋</h3>
         <div class="img_text">
-            <img src="238img/32648601_s.jpg" class="img_left">
+            <div class="slider-container">
+                <div class="slider-wrapper">
+                    <img src="238img/yoin.jpg" class="slide" >
+                    <img src="238img/iwaya2.jpg" class="slide" >
+                </div>
+                <button class="slider-btn prev-btn">❮</button>
+                <button class="slider-btn next-btn">❯</button>
+                <div class="dots-container"></div>
+            </div>
             <div class="text1">
-                ー波が刻んだ神秘の洞窟ー<br><br>
-                江ノ島参道から徒歩約15分<br>
-                第一岩屋と第二岩屋は波の浸食によって作られた海食洞窟<br>
-                ロウソクをもって洞窟を進んだ先に見える海は青空の日は格別<br>
+                <h3>岩屋</h3>
+                <p><span>ー波が刻んだ神秘の洞窟ー</span><br>
+                江ノ島参道から徒歩約15分
+                第一岩屋と第二岩屋は波の浸食によって作られた海食洞窟
+                ロウソクをもって洞窟を進んだ先に見える海は青空の日は格別</p>
             </div>
         </div>
 
-        <h3>江の島シーキャンドル</h3>
-        <div class="img_text">
-            <img src="238img/31657395_s.jpg" height="400" class="img_left">
-            <div class="text1">
-                ー空と海の境界に灯る小さな奇跡ー<br><br>
-                江ノ島シーキャンドルは相模湾を一望する海上60mの天望タワー<br>
-                江ノ島全体を見渡すことが可能<br>
-                晴れてる日には富士山を見ることもできる<br>
-                夜にはライトアップ、敷地内にはカフェやお土産ショップも充実
+        <div class="img_text layout-reverse">
+            <img src="238img/31657395_s.jpg" height="300" class="img_right">
+            <div class="text2">
+                <h3>江の島シーキャンドル</h3>
+                <p><span>ー空と海の境界に灯る小さな奇跡ー</span><br>
+                江ノ島シーキャンドルは相模湾を一望する海上60mの天望タワー。江ノ島全体を見渡すことが可能。
+                晴れてる日には富士山を見ることもできる。夜にはライトアップ、敷地内にはカフェやお土産ショップも充実</p>
             </div>
         </div>
 
-        <h3>江の島弁財天仲見世通り</h3>
         <div class="img_text">
             <img src="238img/23803859_s.jpg" class="img_left">
             <div class="text1">
-                ー潮風誘う、石段のグルメ散歩ー<br><br>
-                しらす丼や両面焼きせんべいなどの名物グルメが並ぶ通り<br>
-                神社や観光スポットにつながる江の島の入り口<br>
+                <h3>江の島弁財天仲見世通り</h3>
+                <p><span>ー潮風誘う、石段のグルメ散歩ー</span><br>
+                しらす丼や両面焼きせんべいなどの名物グルメが並ぶ通り
+                神社や観光スポットにつながる江の島の入り口</p>
             </div>
         </div>
     </section>
     
-    <section id="food">
+    <section id="food"><br>
         <h2>food</h2>
-        <h3>魚見亭</h3>
         <div class="img_text">
             <img src="238img/sirasu.jpg" class="img_left">
             <div class="text1">
-                ーオーシャンビューに広がる贅沢時間ー<br><br>
-                生シラス丼を全席オーシャンビューの絶景で食べることができる店舗<br>
-                江ノ島を進んだ先に見える150年の歴史をもつ魚見亭では新鮮な海鮮を食べることができます
+                <h3>魚見亭</h3>
+                <p><span>ーオーシャンビューに広がる贅沢時間ー</span><br>
+                生シラス丼を全席オーシャンビューの絶景で食べることができる店舗
+                江ノ島を進んだ先に見える150年の歴史をもつ魚見亭では新鮮な海鮮を食べることができます</p>
             </div>
         </div>
 
-        <h3>江ノ島小屋</h3>
-        <div class="img_text">
+        <div class="img_text layout-reverse">
             <img src="238img/koya.jpg" class="img_right">
             <div class="text2">
-                ー潮騒と波音を間近に感じる小屋風ダイニングー<br><br>
+                <h3>江ノ島小屋</h3>
+                <p><span>ー潮騒と波音を間近に感じる小屋風ダイニングー</span><br>
                 朝ごはんメニューでは「漁師汁定食」や「金目鯛の煮汁卵かけご飯」を楽しむことができる。
-                江ノ島を見ることのできるテラス席は予約が必須なことも
+                江ノ島を見ることのできるテラス席は予約が必須なことも</p>
             </div>
         </div>
     </section>
 
-    <section id="access">
-        <h2>access</h2>
+    <section class="content-section" id="event">
+        <h2 class="section-title">event</h2>
+        <nav class="season-tabs">
+            <button type="button" class="tab-button active" data-season="spring">春 🌸</button>
+            <button type="button" class="tab-button" data-season="summer">夏 🎆</button>
+            <button type="button" class="tab-button" data-season="autumn">秋 🍁</button>
+            <button type="button" class="tab-button" data-season="winter">冬 ❄️</button>            
+        </nav>
+            
+        <div class="season-content">
+            <div id="spring" class="tab-panel active" role="tabpanel" aria-labelledby="tab-spring">
+                <h4>春のイベント一覧</h4>
+                <ul>
+                    <li><strong>湘南江の島春まつり</strong> - 江の島弁天橋での武者行列や稚児行列が見どころ。 (3月中旬)</li>
+                    <li><strong>流鏑馬（やぶさめ）</strong> - 片瀬海岸西浜で勇壮な馬術が披露されます。(4月下旬)</li>
+                </ul>
+            </div>
+            <div id="summer" class="tab-panel" role="tabpanel" aria-labelledby="tab-summer">
+                <h4>夏のイベント一覧</h4>
+                <ul>
+                    <li><strong>江の島天王祭</strong> - 海の安全と豊漁を祈願する伝統的なお祭り。(7月中旬)</li>
+                    <li><strong>江の島灯籠</strong> - 島内が優しい灯籠の光でライトアップされます。 (8月)</li>
+                    <li><strong>ふじさわ江の島花火大会</strong> - 片瀬海岸から打ち上げられる大輪の花火。(例年10月開催ですが、夏に開催される年も)</li>
+                </ul>
+            </div>
+            <div id="autumn" class="tab-panel" role="tabpanel" aria-labelledby="tab-autumn">
+                <h4>秋のイベント一覧</h4>
+                <ul>
+                    <li><strong>湘南キャンドル</strong> - 江の島サムエル・コッキング苑が数千のキャンドルで彩られます。 (10月中旬～11月上旬)</li>
+                    <li><strong>龍の口竹灯籠</strong> - 龍口寺周辺が竹灯籠で幻想的な雰囲気に。(10月)</li>
+                </ul>
+            </div>
+            <div id="winter" class="tab-panel" role="tabpanel" aria-labelledby="tab-winter">
+                <h4>冬のイベント一覧</h4>
+                <ul>
+                    <li><strong>湘南の宝石</strong> - 島全体がイルミネーションで輝く、冬の江の島最大のイベント。(11月下旬～2月下旬)</li>
+                    <li><strong>元旦 初日の出</strong> - 太平洋から昇る美しい初日の出を拝めます。(1月1日)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="access"><br>
+        <h2 class="h2ac">access</h2>
+            <img src="238img/access.png" height="300" width="700" >
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9209.48328832309!2d139.47899369021144!3d35.30488712186392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1751005306767!5m2!1sja!2sjp" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 </body>
 </html>
