@@ -4,8 +4,8 @@
     color: var(--text-color);
     background: var(--bg-color);
     overflow-x: hidden;
-    
   }
+  
 div.members {
   background-color: #daf5ff;
   padding: 100px;
