@@ -1,3 +1,11 @@
+  body{
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 1.7;
+    color: var(--text-color);
+    background: var(--bg-color);
+    overflow-x: hidden;
+    cursor: none; 
+  }
 div.members {
   background-color: #daf5ff;
   padding: 100px;
@@ -52,3 +60,4 @@ h1 {
   font-family: sans-serif;
   transition: color 0.2s;
 }
+  
