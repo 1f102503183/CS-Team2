@@ -4,7 +4,7 @@
     color: var(--text-color);
     background: var(--bg-color);
     overflow-x: hidden;
-    
+    cursor: none; 
   }
 div.members {
   background-color: #daf5ff;
@@ -29,5 +29,35 @@ h1 {
   height: 70%;
 }
 
+/*ここから.global-nav ul li aまでメニューのcss*/
+.global-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
 
+.global-nav ul {
+  display: flex;
+  justify-content: center; /* 真ん中揃え */
+  list-style: none;
+}
 
+.global-nav ul li {
+  margin: 0 30px; /* 左右の余白 */
+}
+
+.global-nav ul li a {
+  display: block;
+  padding: 15px 0;
+  color: #01adf9;
+  text-decoration: none; /* 下線消す */
+  font-size: 18px;
+  font-weight: bold; /* 太字 */
+  letter-spacing: 0.15em; /* 文字間隔 */
+  text-transform: uppercase; /* 大文字 */
+  font-family: sans-serif;
+  transition: color 0.2s;
+}
+  
