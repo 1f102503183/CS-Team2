@@ -6,6 +6,12 @@
     <title>062</title>
     <link rel="stylesheet" type="text/css" href="062.css">
     <link rel="stylesheet" type="text/css" href="../../common.css">
+     <style>
+    body { font-family: sans-serif; padding: 20px; }
+    .question { margin-bottom: 10px; }
+    .choices label { display: block; margin: 5px 0; }
+    #result { margin-top: 15px; font-weight: bold; }
+  </style>
 </head>
 
 <body>
@@ -13,12 +19,52 @@
     <br>
     <br>
     <h1>フリー画像だけを使って観光地クイズ</h1>
-    <p><br>このサイトではフリー画像を使ったクイズを一問出すよ！答えられるかな？</p>
+    <p><br>このサイトではフリー画像を使ったクイズを出すよ！答えられるかな？</p>
     <h2>クイズ</h2>
     <img src="pexels-ds-babariya-756428940-32584725.jpg" alt="猿の写真">
     <p>猿がいます</p>
-    <img src="c:\Users\iniad\Downloads\pexels-aizat-ramlan-1291546-12929085.jpg" alt="眠っている猫の写真">
+    <img src="062/062cat.jpg" alt="眠っている猫の写真">
     <p>猫もいます</p>
+    <p>象もいます</p>
+    <div id="quiz">
+    <div class="question">Q これらに当てはまる観光地は次のうちどれでしょう</div>
+    <div class="choices">
+      <label><input type="radio" name="q1" value=""> </label>
+      <label><input type="radio" name="q1" value=""> </label>
+      <label><input type="radio" name="q1" value="日光東照宮"> 日光東照宮</label>
+      <label><input type="radio" name="q1" value=""> </label>
+    </div>
+
+    <button id="submit">解答</button>
+  </div>
+
+  <div id="result"></div>
+
+  <script>
+    document.getElementById('submit').addEventListener('click', function() {
+      let choices = document.getElementsByName('q1');
+      let selected = '';
+      for (let c of choices) {
+        if (c.checked) {
+          selected = c.value;
+          break;
+        }
+      }
+      if (!selected) {
+        alert('選択されていません');
+        return;
+      }
+      const correct = '日光東照宮';
+      let resultArea = document.getElementById('result');
+      if (selected === correct) {
+        resultArea.textContent = '正解！おめでとう';
+        resultArea.style.color = 'green';
+      } else {
+        resultArea.textContent = '不正解… 正解は「' + correct + '」';
+        resultArea.style.color = 'red';
+      }
+    });
+  </script>
 </body>
 
 </html>
