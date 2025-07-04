@@ -16,32 +16,18 @@
             <li><a href="#Introduction">INTRODUCTION</a></li>
         </ul>
     </nav>
-    <!-- <div class="images">
-        <button type="button" id="backbutton">back</button>
-        <image id="imageSlider" alt="スライダー" onclick="changeImage"></image>
-        <button type="button" id="nextbutton">next</button>
-    </div> -->
+    <img src="" alt="飛行機の写真">
     <div class="content">
         <div class="main_description" id="description">
             <h1>それぞれの好きな観光地</h1>
             <h2>Site Overview</h2>
-            <p>説明</p>
+            <p>このサイトは、とある四人がそれぞれ自由に、観光地について紹介するサイトです</p>
         </div>
         <div class="members" id="Introduction">
             <h2>Introduction page</h2><br>
             <div>
                 <h3><a href=".\home\318\318.html">s1f10250318</a></h3>
-                <p id="color">私のよく行った三重県伊勢市周辺のおすすめスポットを紹介！</p>
-                <script>
-                    const colorvalue = document.getElementById("color");
-                    const colorList = ["#ff0000", "#00ff00", "#0000ff"];
-                    let i = 0;
-                    colorvalue.style.color = colorList[i];
-                    setInterval(() => {
-                        i = (i + 1) % colorList.length;
-                        colorvalue.style.color = colorList[i];
-                    }, 100)
-                </script>
+                <p>せつめい</p>
             </div>
             <div>
                 <h3><a href=".\home\062\062.html">s1f10250062</a></h3>
@@ -54,8 +40,11 @@
             <div>
                 <h3><a href=".\home\238\238.html">s1f10250238</a></h3>
                 <p>神奈川県藤沢市に位置する江ノ島<br>
-                    きれいな景色やグルメなどを紹介！！</p>
+                きれいな景色やグルメなどを紹介！！</p>
             </div>
+        </div>
+        <div class="images">
+            <image id="imageSlider" alt="スライダー"></image>
         </div>
     </div>
     <script src="index.js"></script>
