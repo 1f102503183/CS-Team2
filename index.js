@@ -1,7 +1,7 @@
 const imageSlider = document.getElementById("imageSlider");
 
 const url_list = [
-  "./home/img/homepage_image/A.jpg",
+  "./home/img/homepage_image/enosima.jpg",
   "./home/img/homepage_image/B.jpg",
   "./home/img/homepage_image/enosima.jpg",
 ];
