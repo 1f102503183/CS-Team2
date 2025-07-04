@@ -1,8 +1,7 @@
+
 body {
   font-family: "Noto Sans JP", sans-serif;
   line-height: 1.7;
-  color: var(--text-color);
-  background: var(--bg-color);
   overflow-x: hidden;
 }
 
@@ -30,7 +29,7 @@ h1 {
   height: 30%;
 }
 
-/* ここから下ページ内ジャンプ用 */
+/* ここから下ががページ内ジャンプ用 */
 .global-nav {
   position: fixed;
   top: 0;
@@ -46,7 +45,7 @@ h1 {
 }
 
 .global-nav ul li {
-  margin: 0 30px;
+  margin: 0 30px; /* 左右の余白 */
 }
 
 .global-nav ul li a {
@@ -62,3 +61,4 @@ h1 {
   transition: color 0.2s;
 }
 /*ここまで*/
+
