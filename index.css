@@ -1,9 +1,10 @@
-  body{
-    font-family: 'Noto Sans JP', sans-serif;
-    line-height: 1.7;
 
-    
-  }
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
 div.members {
   background-color: #daf5ff;
   padding: 100px;
@@ -19,15 +20,16 @@ h1 {
 
 .images {
   background-color: #01adf9;
-  padding: 100px;
+  width: auto;
+  height: auto;
 }
 
 #imageSlider {
-  width: 70%;
-  height: 70%;
+  width: 30%;
+  height: 30%;
 }
 
-/*ここから.global-nav ul li aまでメニューのcss*/
+/* ここから下ががページ内ジャンプ用 */
 .global-nav {
   position: fixed;
   top: 0;
@@ -38,7 +40,7 @@ h1 {
 
 .global-nav ul {
   display: flex;
-  justify-content: center; /* 真ん中揃え */
+  justify-content: center;
   list-style: none;
 }
 
@@ -48,14 +50,15 @@ h1 {
 
 .global-nav ul li a {
   display: block;
-  padding: 15px 0;
+  padding: 10px 0;
   color: #01adf9;
-  text-decoration: none; /* 下線消す */
+  text-decoration: none;
   font-size: 18px;
-  font-weight: bold; /* 太字 */
-  letter-spacing: 0.15em; /* 文字間隔 */
-  text-transform: uppercase; /* 大文字 */
+  font-weight: bold;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
   font-family: sans-serif;
   transition: color 0.2s;
 }
-  
+/*ここまで*/
+
