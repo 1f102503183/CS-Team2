@@ -1,11 +1,11 @@
-  body{
-    font-family: 'Noto Sans JP', sans-serif;
-    line-height: 1.7;
-    color: var(--text-color);
-    background: var(--bg-color);
-    overflow-x: hidden;
-  }
-  
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.7;
+  color: var(--text-color);
+  background: var(--bg-color);
+  overflow-x: hidden;
+}
+
 div.members {
   background-color: #daf5ff;
   padding: 100px;
@@ -21,43 +21,45 @@ h1 {
 
 .images {
   background-color: #01adf9;
-  padding: 100px;
+  width: auto;
+  height: auto;
 }
 
 #imageSlider {
-  width: 70%;
-  height: 70%;
+  transition: margin-right 2s;
+  width: 30%;
+  height: 30%;
 }
 
 /* ここから下ページ内ジャンプ用 */
 .global-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .global-nav ul {
-    display: flex;
-    justify-content: center; 
-    list-style: none;
+  display: flex;
+  justify-content: center;
+  list-style: none;
 }
 
 .global-nav ul li {
-    margin: 0 30px; 
+  margin: 0 30px;
 }
 
 .global-nav ul li a {
-    display: block;
-    padding: 10px 0;           
-    color: #01ADF9;                       
-    text-decoration: none;
-    font-size: 18px;                   
-    font-weight: bold; 
-    letter-spacing: 0.15em; 
-    text-transform: uppercase;  
-    font-family: sans-serif;
-    transition: color 0.2s;
+  display: block;
+  padding: 10px 0;
+  color: #01adf9;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  transition: color 0.2s;
 }
 /*ここまで*/

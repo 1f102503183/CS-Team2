@@ -4,6 +4,10 @@
   color: #fff;
 }
 
+body {
+  background-color: #eee;
+}
+
 #image {
   width: auto;
   height: 100px;
